@@ -1,0 +1,1 @@
+TORCH_LOGS="dynamo,graph,graph_code,graph_breaks,recompiles,aot_graphs,aot_joint_graph,compiled_autograd" python compile-print-debug.py

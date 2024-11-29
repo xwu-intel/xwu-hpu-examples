@@ -1,0 +1,23 @@
+{
+  "steps_per_print": 24,
+  "train_batch_size": 12288,
+  "train_micro_batch_size_per_gpu": 32,
+  "tensorboard": {
+    "enabled": true,
+    "output_path": "/root/logs/tensorboard",
+    "job_name": "bert_1.5b_lans_zero1_bf16"
+  },
+  "bf16":  { "enabled": true },
+  "gradient_clipping": 1.0,
+  "zero_optimization":  {
+    "stage": 1,
+    "contiguous_gradients": false
+  },
+  "zero_allow_untested_optimizer": true,
+  "timers": {
+    "throughput": {
+      "enabled": true,
+      "synchronized": false
+    }
+  }
+}
